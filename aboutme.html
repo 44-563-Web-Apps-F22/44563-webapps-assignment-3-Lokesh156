@@ -40,7 +40,13 @@
             </tr>
         </table>
         <hr>
-      
+        <h2> iPad Detection</h2>
+        <blockquote>How to detect iPad</blockquote>
+        <a href="https://stackoverflow.com/questions/57776001/how-to-detect-ipad-pro-as-ipad-using-javascript">Link to stack overflow</a>
+        <pre>
+                    RewriteCond %{HTTP_USER_AGENT} ^.*iPad.*$
+          RewriteRule ^(.*)$ http://ipad.yourdomain.com [R=301]
+        </pre>
 
     </body>
 
